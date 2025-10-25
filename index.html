@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACE Club — Book Review Presentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: 
+        linear-gradient(120deg, #020f21aa 40%, #0C2442cc 100%),
+        url('PHOTO-2025-10-24-11-12-01.jpg') center center/cover no-repeat fixed;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 0;
+      padding-bottom: 30px;
+      overflow-x: hidden;
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+
+    form {
+      position: relative;
+      margin-top: 40px;
+      background-color: rgba(19, 43, 82, 0.85);
+      padding: 28px 40px 32px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 28px rgba(255, 215, 0, 0.25);
+      width: 90vw;
+      max-width: 430px;
+      z-index: 2;
+      backdrop-filter: blur(4px);
+      animation: fadeInForm 1.4s;
+    }
+
+    @keyframes fadeInForm {
+      from { opacity: 0; transform: translateY(-30px);}
+      to   { opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      text-align: center;
+      color: #F8C547;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #eee;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 8px 0 13px 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 15px;
+      background: #183263;
+      color: #ffd600;
+      outline: none;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 2px 10px 0 rgba(10,60,220,0.02);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      box-shadow: 0 0 0 2px #F8C54777;
+    }
+
+    button {
+      background: linear-gradient(90deg, #FFC857, #F8C547 70%);
+      color: #0C2442;
+      font-weight: bold;
+      padding: 11px 0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+      transition: background .2s, box-shadow .2s;
+      box-shadow: 0 2px 10px 0 rgba(255,200,70,0.06);
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #ffeda0, #ffd75c 80%);
+      box-shadow: 0 8px 30px 0 rgba(255, 230, 90, 0.13);
+    }
+
+    /* Decorative sparkles */
+    .sparkle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #fffad9;
+      border-radius: 50%;
+      animation: twinkle 2s infinite alternate;
+      opacity: 0.7;
+    }
+
+    .sparkle:nth-child(2) { left: 86%; top: 8%; width: 4px; height: 4px; animation-delay: .7s;}
+    .sparkle:nth-child(3) { left: 10%; top: 30%; width: 3px; height: 3px; animation-delay: 1.6s;}
+    .sparkle:nth-child(4) { left: 84%; top: 80%; width: 5px; height: 5px; animation-delay: 2.7s;}
+
+    @keyframes twinkle {
+      from { opacity: 0.6; transform: scale(.88);}
+      to { opacity: 1; transform: scale(1.3);}
+    }
+
+    @media (max-width: 600px) {
+      .container { align-items: stretch; }
+      form { padding: 18px 4vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSemgCRCPwLy6vluHDaeaC9v5zJO9Wd4PmGWpNa8GuATH6GMkg/formResponse" method="POST" target="_blank">
+      <div class="sparkle" style="left:12%;top:3%;"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <h2>📖 ACE Club — Book Review Presentation</h2>
+      <p>Because every book has more than one story…</p>
+
+      <input type="text" name="entry.283790437" placeholder="Full Name" required>
+      <input type="email" name="entry.1568752046" placeholder="Email ID" required>
+      <input type="tel" name="entry.291885193" placeholder="Phone Number" required>
+
+      <select name="entry.1421471774" required>
+        <option value="" disabled selected>Year (select)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <input type="text" name="entry.1384599810" placeholder="Title of the Book" required>
+      <input type="text" name="entry.1339707501" placeholder="Author of the Book" required>
+
+      <select name="entry.1703688515" required>
+        <option value="" disabled selected>Genre of the Book</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Romance">Romance</option>
+        <option value="Mystery / Thriller">Mystery / Thriller</option>
+        <option value="Self-Help / Motivational">Self-Help / Motivational</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button type="submit">Submit Review ✨</button>
+    </form>
+  </div>
+
+</body>
+</html>
